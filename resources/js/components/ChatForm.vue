@@ -1,6 +1,6 @@
 <template>
-    <div class="input-group">
-        <input type="text" id="btn-input" class="form-control form-control-sm" name="message" placeholder="Type your message here..." v-model="newMessage" @keyup.enter="sendMessage">
+    <div class="input-group mt-2">
+        <input type="text" id="btn-input" class="form-control form-control-sm mr-2" name="message" placeholder="Type your message here..." v-model="newMessage" @keyup.enter="sendMessage">
 
         <span class="input-group-btn">
             <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">

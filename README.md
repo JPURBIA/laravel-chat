@@ -2,8 +2,8 @@
 ## Table of contents
 
 * [Installations](#installation)
-* [Additional Setup](#additionalsetup)
-* [How to run](#howtorun)
+* [Additional Setup](#additional-setup)
+* [How to run](#how-to-run)
 * [Contributors](#contributors)
 ## Installation
 
@@ -33,17 +33,6 @@ $ php artisan migrate:fresh
 
 # Install JS dependencies
 $ npm ci
-
-# Watch JS changes to auto-build
-$ npm run watch
-
-# OR, build just once by
-# $ npm run dev
-
-# Start local server
-$ php artisan serve
-
-# Open your browser and access http://localhost:8000/
 ```
 ---
 ## Additional setup
@@ -58,6 +47,25 @@ $ php artisan serve
     PUSHER_APP_SECRET=your-pusher-secret
     PUSHER_APP_CLUSTER=mt1
 ```
+## How to run
+
+Follow these steps to start your application:
+``` bash
+# Start the queue
+$php artisan queue:work
+ 
+# Watch JS changes to auto-build
+$ npm run watch
+
+# OR, build just once by
+# $ npm run dev
+
+# Start local server
+$ php artisan serve
+
+# Open your browser and access http://localhost:8000/
+```
+
 ## Contributors
 
 * Jonty Purbia
